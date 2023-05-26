@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./common.css">
+	<link rel="stylesheet" href="./clarins.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<!-- SwiperJS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	
+	<!-- WebFont -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<script>
+		jQuery(document).ready(function(){
+			checkOperatingSystem();
+		});
+
+		function checkOperatingSystem() {
+
+			var  userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+			//Check mobile device is Android
+			if (/android/i.test(userAgent)) {
+				//Add your Code here
+			}
+
+			//Check mobile device is IOS
+			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				//Add your Code here
+			}
+
+			//Check device os is Windows (For Laptop and PC)
+			if (navigator.appVersion.indexOf("Win")!=-1) {
+				jQuery('head').append('<link rel="stylesheet" type="text/css" href="./style_win.css" />');
+			}
+
+			//Check device os is MAC (For Laptop and PC)
+			if (navigator.appVersion.indexOf("Mac")!=-1) {
+				jQuery('head').append('<link rel="stylesheet" type="text/css" href="./style.css" />');
+			}
+		}
+	</script>
+</head>
+<body>
+	<div style="display: none; position: absolute;
+    top: -252px;
+    left: -340px;
+    opacity: 0.5;
+    z-index: 99999;"><img src="./img/bg.png" alt=""></div>
+	<div id="clarins-wrap" class="clarins-wrap">
+		<!--클라란스헤더 -->
+		<div class="clarins-header">
+			<a class="clarins-logo" href="/estore/kr/ko/b/clarins"><img src="./img/logo.png" alt="clarins"></a>
+			<nav class="clarins-gnb">
+				<ul>
+					<li><a href="/estore/kr/ko/c/CLR_01">신제품</a></li>
+					<li><a href="/estore/kr/ko/c/CLR_02">베스트 셀러</a></li>
+					<li class="item">							
+						<a href="/estore/kr/ko/c/CLR_04" class="sub_mn">페이스<img src="./img/icon_menu_arrow.png" alt="" /></a>
+						<ul class="">
+							<li><a href="">모든 제품 보기</a></li>
+							<li><a href="">클렌저 &amp; 토너</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_04_01_03">세럼</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_04_01_04">모이스처라이저</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_04_01_06">아이 케어</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_04_01_07">립 &amp; 넥케어</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_04_01_08">엑스폴리에이터 &amp; 마스크</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_04_01_05">페이스 오일</a></li>
+							<li><a href="">UV 프로텍션</a></li>
+						</ul>
+					</li>
+					<li class="item">
+						<a href="/estore/kr/ko/c/CLR_05" class="sub_mn">바디<img src="./img/icon_menu_arrow.png" alt="" /></a>
+						<ul class="">
+							<li><a href="">모든 제품 보기</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_05_01">바디 엑스폴리에이터</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_05_02">컨투어링</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_05_03">모이스처라이저</a></li>
+							<li><a href="">트리트먼트 오일</a></li>
+							<li><a href="">트리트먼트 향수</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_05_06">배스 &amp; 샤워</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_05_08">바디 선케어</a></li>
+							<li><a href="">임산부 케어</a></li>
+						</ul>
+					</li>
+					<li class="item">
+						<a href="/estore/kr/ko/c/CLR_07" class="sub_mn">메이크업<img src="./img/icon_menu_arrow.png" alt="" /></a>
+						<ul class="">
+							<li><a href="/estore/kr/ko/c/CLR_07_01">페이스</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_07_02">립</a></li>
+							<li><a href="/estore/kr/ko/c/CLR_07_03">아이</a></li>
+						</ul>
+					</li>
+					<li><a href="/estore/kr/ko/c/CLR_08" class="sub_mn">클라랑스맨</a></li>
+					<li><a href="/estore/kr/ko/c/CLR_03">면세전용</a></li>
+					<li><a href="/estore/kr/ko/b/?p=clarins_pc_brand">브랜드 스토리</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="clarins-page-content">
+			<div class="clarins-mainBanner">
+				<div id="swiperBanner" class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="img_wrap">
+								<img src="./img/banner_PC.png" alt="">
+							</div>
+							<div class="text_wrap">
+								<span class="cate">NEW</span>
+								<h5 class="nm">브라이트 플러스</h5>
+								<p class="desc">더 빛나는 피부를 향해<br />환하게 나아가세요</p>
+								<a href="#" class="btn_link">바로가기</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="img_wrap">
+								<img src="./img/banner_PC.png" alt="">
+							</div>
+							<div class="text_wrap">
+								<span class="cate">NEW</span>
+								<h5 class="nm">브라이트 플러스</h5>
+								<p class="desc">더 빛나는 피부를 향해<br />환하게 나아가세요</p>
+								<a href="#" class="btn_link">바로가기</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="img_wrap">
+								<img src="./img/banner_PC.png" alt="">
+							</div>
+							<div class="text_wrap">
+								<span class="cate">NEW</span>
+								<h5 class="nm">브라이트 플러스</h5>
+								<p class="desc">더 빛나는 피부를 향해<br />환하게 나아가세요</p>
+								<a href="#" class="btn_link">바로가기</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="section_banner">
+				<div>The Power<br />of Plants</div>
+				<p><span>자연이 주는 영감</span><span>아름다움과 식물 전문가</span><span>식물 포뮬러의 기술</span></p>
+				<img src="./img/leaf.png" alt="">
+			</div>
+			<div class="section_common section_expertise">
+				<h1>Your Skin. Our Expertise.</h1>
+				<p>강력한 식물 파워 포뮬러를 경험해보세요</p>
+				<div class="list_wrap">
+					<ul>
+						<li>
+							<figure><img src="./img/img_face.png" alt=""></figure>
+							<h6>FACE</h6>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<figure><img src="./img/img_makeup.png" alt=""></figure>
+							<h6>MAKEUP</h6>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<figure><img src="./img/img_body.png" alt=""></figure>
+							<h6>BODY</h6>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<figure><img src="./img/img_travelexclusive.png" alt=""></figure>
+							<h6>TRAVEL<br />EXCLUSIVES</h6>
+							<a href="">자세히 보기</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section_story">
+				<div class="img_wrap"><img src="./img/img_domaine_clarins.png" alt=""></div>
+				<div class="text_wrap">
+					<span class="section_cate">Clarins Story</span>
+					<h3 class="tit">클라랑스의<br />10가지 약속</h3>
+					<p class="desc">변화를 만드는 클라랑스의 신념</p>
+					<a href="" class="btn_more">더 알아보기</a>
+				</div>
+			</div>
+			<div class="section_common section_prd">
+				<h1>Beauty Must-Haves</h1>
+				<p>클라랑스 추천 제품을 경험해보세요</p>
+				<div class="list_wrap">
+					<div id="swiperPrd" class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="img_wrap">
+									<span class="cate">TEXT AREA</span>
+									<img src="./img/ex_prd_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<p class="desc">1번 제품명 텍스트 영역입니다1번 제품명 텍스트 영역입니다1번 제품명 텍스트 영역입니다1번 제품명 텍스트 영역입니다1번 제품명 텍스트 영역입니다1번 제품명 텍스트 영역입니다</p>
+									<span class="eng">english text area</span>
+									<span class="price">￦789,012</span>
+									<a href="" class="btn_view">빠르게 보기</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img_wrap">
+									<span class="cate">TEXT AREA</span>
+									<img src="./img/ex_prd_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<p class="desc">2번 제품명 텍스트 영역입니다</p>
+									<span class="eng">english text area</span>
+									<span class="price">￦789,012</span>
+									<a href="" class="btn_view">빠르게 보기</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img_wrap">
+									<span class="cate">TEXT AREA</span>
+									<img src="./img/ex_prd_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<p class="desc">3번 제품명 텍스트 영역입니다</p>
+									<span class="eng">english text area</span>
+									<span class="price">￦789,012</span>
+									<a href="" class="btn_view">빠르게 보기</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img_wrap">
+									<span class="cate">TEXT AREA</span>
+									<img src="./img/ex_prd_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<p class="desc">4번 제품명 텍스트 영역입니다</p>
+									<span class="eng">english text area</span>
+									<span class="price">￦789,012</span>
+									<a href="" class="btn_view">빠르게 보기</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img_wrap">
+									<span class="cate">TEXT AREA</span>
+									<img src="./img/ex_prd_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<p class="desc">5번 제품명 텍스트 영역입니다</p>
+									<span class="eng">english text area</span>
+									<span class="price">￦789,012</span>
+									<a href="" class="btn_view">빠르게 보기</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img_wrap">
+									<span class="cate">TEXT AREA</span>
+									<img src="./img/ex_prd_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<p class="desc">6번 제품명 텍스트 영역입니다</p>
+									<span class="eng">english text area</span>
+									<span class="price">￦789,012</span>
+									<a href="" class="btn_view">빠르게 보기</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script>
+
+			jQuery("#clarins-wrap .clarins-gnb > ul > li").hover(function(){
+				jQuery(this).toggleClass("on");
+			});
+
+
+
+			var swiperBanner = new Swiper(".clarins-mainBanner .swiper", {
+				loop: true,
+				navigation: {
+					nextEl: ".clarins-mainBanner .swiper-button-next",
+					prevEl: ".clarins-mainBanner .swiper-button-prev",
+				},
+				pagination: {
+					el: ".clarins-mainBanner .swiper-pagination",
+				},
+			});
+
+			var swiperPrd = new Swiper(".section_prd .swiper", {
+				slidesPerView: 'auto',
+				slidesPerGroup: 3,
+				navigation: {
+					nextEl: ".section_prd .swiper-button-next",
+					prevEl: ".section_prd .swiper-button-prev",
+				},
+				pagination: {
+					el: ".section_prd .swiper-pagination",
+					clickable: true,
+				},
+			});
+		</script>
+	</div>
+</body>
+</html>
